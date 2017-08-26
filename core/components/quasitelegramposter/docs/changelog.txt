@@ -1,0 +1,5 @@
+Changelog for quasiTelegramPoster.
+
+quasiTelegramPoster 1.0.0 pl
+==============
+* Initial commit.

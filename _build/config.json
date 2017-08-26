@@ -1,0 +1,14 @@
+{
+    "name": "quasiTelegramPoster",
+    "lowCaseName": "quasitelegramposter",
+    "description": "A MODX Revolution plugin.",
+    "author": "mishantrop",
+    "version": "1.0.0",
+    "package":{
+        "elements": {
+            "plugins": [{
+                "name": "quasiTelegramPoster"
+            }]
+        }
+    }
+}
