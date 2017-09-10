@@ -35,6 +35,12 @@ switch ($modx->event->name) {
         } else {
             $uri = $modx->makeUrl($resourceId, '', '', 'https');
         }
+		
+		// Чтобы избежать повторной отправки в канал
+		$dontSendToTelegram = (int)$resource->getTVValue('dontSendToTelegram');
+        if ($dontSendToTelegram === 1) {
+        	break;
+        }
 
         $format = 1;
 
