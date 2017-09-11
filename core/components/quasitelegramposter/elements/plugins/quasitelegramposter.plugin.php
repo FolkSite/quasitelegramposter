@@ -37,7 +37,11 @@ switch ($modx->event->name) {
         }
 		
 		// Чтобы избежать повторной отправки в канал
-		$dontSendToTelegram = (int)$resource->getTVValue('dontSendToTelegram');
+        $dontSendToTelegram = (int)$resource->getTVValue('dontSendToTelegram');
+		if ($dontSendToTelegram === 0) {
+			$resource->setTVValue('dontSendToTelegram', 1);
+			$resource->save();
+		}
         if ($dontSendToTelegram === 1) {
         	break;
         }
