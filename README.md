@@ -1,5 +1,5 @@
 # quasiTelegramPoster
-quasiTelegramPoster is a simple plugin that send new resources to Telegram channel.
+quasiTelegramPoster is a simple plugin that sends  new resources to Telegram channel.
 
 ## Requirements
 * MODX Revolution
@@ -9,4 +9,9 @@ quasiTelegramPoster is a simple plugin that send new resources to Telegram chann
 ## Events
 * OnDocFormSave
 * OnDocPublished
-* OnDocUnPublished
+* OnResourceAutoPublish
+
+## Changelog
+* Small refactoring.
+* OnResourceAutoPublish now works.
+* First release.
